@@ -1,1 +1,323 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#176b3a">
+
+    <title>AgroSmart | Agricultura Inteligente</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="logo">
+            🌱 AgroSmart
+        </div>
+
+        <p>Agricultura inteligente e sustentável</p>
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <button class="menu-btn active" data-page="inicio">
+            🏠 Início
+        </button>
+
+        <button class="menu-btn" data-page="plantacao">
+            🌾 Plantação
+        </button>
+
+        <button class="menu-btn" data-page="irrigacao">
+            💧 Irrigação
+        </button>
+
+        <button class="menu-btn" data-page="cuidados">
+            🌿 Cuidados
+        </button>
+
+        <button class="menu-btn" data-page="relatorios">
+            📊 Relatórios
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <!-- PÁGINA INICIAL -->
+        <section id="inicio" class="page active">
+
+            <div class="welcome">
+                <h1>Bem-vindo ao AgroSmart!</h1>
+                <p>
+                    Cuide da sua plantação com tecnologia,
+                    informação e sustentabilidade.
+                </p>
+            </div>
+
+            <h2>Resumo da propriedade</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>🌾 Plantações</h3>
+                    <p id="totalPlantacoes">0</p>
+                    <span>Culturas cadastradas</span>
+                </div>
+
+                <div class="card">
+                    <h3>💧 Irrigações</h3>
+                    <p id="totalIrrigacoes">0</p>
+                    <span>Registros realizados</span>
+                </div>
+
+                <div class="card">
+                    <h3>🌱 Culturas</h3>
+                    <p id="culturaPrincipal">Nenhuma</p>
+                    <span>Última cultura cadastrada</span>
+                </div>
+
+            </div>
+
+            <div class="info-box">
+                <h2>🌍 Agricultura sustentável</h2>
+
+                <p>
+                    O AgroSmart ajuda pequenos agricultores
+                    a organizar suas plantações, acompanhar
+                    irrigações e cuidar melhor das culturas.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- PÁGINA PLANTAÇÃO -->
+        <section id="plantacao" class="page">
+
+            <h1>🌾 Minha plantação</h1>
+
+            <p>Cadastre e acompanhe suas culturas.</p>
+
+            <form id="formPlantacao">
+
+                <label for="nomeCultura">Nome da cultura</label>
+
+                <select id="nomeCultura" required>
+                    <option value="">Selecione uma cultura</option>
+                    <option value="Milho">Milho</option>
+                    <option value="Feijão">Feijão</option>
+                    <option value="Mandioca">Mandioca</option>
+                    <option value="Tomate">Tomate</option>
+                    <option value="Alface">Alface</option>
+                    <option value="Arroz">Arroz</option>
+                    <option value="Outro">Outro</option>
+                </select>
+
+                <label for="areaPlantada">
+                    Área plantada (m²)
+                </label>
+
+                <input
+                    type="number"
+                    id="areaPlantada"
+                    min="1"
+                    placeholder="Ex: 500"
+                    required
+                >
+
+                <label for="dataPlantio">
+                    Data do plantio
+                </label>
+
+                <input
+                    type="date"
+                    id="dataPlantio"
+                    required
+                >
+
+                <button type="submit" class="primary-btn">
+                    Cadastrar plantação
+                </button>
+
+            </form>
+
+            <h2>Minhas culturas cadastradas</h2>
+
+            <div id="listaPlantacoes" class="list-container">
+                <p>Nenhuma plantação cadastrada.</p>
+            </div>
+
+        </section>
+
+        <!-- PÁGINA IRRIGAÇÃO -->
+        <section id="irrigacao" class="page">
+
+            <h1>💧 Controle de irrigação</h1>
+
+            <p>Registre as irrigações da sua propriedade.</p>
+
+            <form id="formIrrigacao">
+
+                <label for="culturaIrrigada">
+                    Cultura irrigada
+                </label>
+
+                <select id="culturaIrrigada" required>
+                    <option value="">Selecione uma plantação</option>
+                </select>
+
+                <label for="quantidadeAgua">
+                    Quantidade de água (litros)
+                </label>
+
+                <input
+                    type="number"
+                    id="quantidadeAgua"
+                    min="1"
+                    placeholder="Ex: 100"
+                    required
+                >
+
+                <label for="dataIrrigacao">
+                    Data da irrigação
+                </label>
+
+                <input
+                    type="date"
+                    id="dataIrrigacao"
+                    required
+                >
+
+                <label for="observacaoIrrigacao">
+                    Observações
+                </label>
+
+                <textarea
+                    id="observacaoIrrigacao"
+                    placeholder="Ex: Solo estava seco."
+                ></textarea>
+
+                <button type="submit" class="primary-btn">
+                    Registrar irrigação
+                </button>
+
+            </form>
+
+            <h2>Histórico de irrigações</h2>
+
+            <div id="listaIrrigacoes" class="list-container">
+                <p>Nenhuma irrigação registrada.</p>
+            </div>
+
+        </section>
+
+        <!-- PÁGINA CUIDADOS -->
+        <section id="cuidados" class="page">
+
+            <h1>🌿 Saúde das plantas</h1>
+
+            <p>
+                Consulte orientações básicas para cuidar
+                melhor da sua plantação.
+            </p>
+
+            <div class="care-card">
+                <h3>🌽 Milho</h3>
+                <p>
+                    Acompanhe a umidade do solo, observe
+                    o desenvolvimento das folhas e faça
+                    o controle preventivo de pragas.
+                </p>
+            </div>
+
+            <div class="care-card">
+                <h3>🫘 Feijão</h3>
+                <p>
+                    Observe manchas nas folhas, evite
+                    excesso de água e acompanhe o
+                    desenvolvimento da cultura.
+                </p>
+            </div>
+
+            <div class="care-card">
+                <h3>🍅 Tomate</h3>
+                <p>
+                    Evite molhar excessivamente as folhas,
+                    observe manchas e mantenha o solo
+                    com umidade adequada.
+                </p>
+            </div>
+
+            <div class="care-card">
+                <h3>🥬 Alface</h3>
+                <p>
+                    Mantenha o solo com boa umidade,
+                    observe as folhas e evite exposição
+                    excessiva ao calor.
+                </p>
+            </div>
+
+            <div class="care-card">
+                <h3>🌱 Mandioca</h3>
+                <p>
+                    Acompanhe o desenvolvimento das plantas,
+                    observe possíveis pragas e mantenha
+                    a área livre de plantas invasoras.
+                </p>
+            </div>
+
+            <div class="warning">
+                ⚠️ As orientações são educativas.
+                Em caso de suspeita de doença ou praga,
+                procure orientação de um técnico agrícola.
+            </div>
+
+        </section>
+
+        <!-- PÁGINA RELATÓRIOS -->
+        <section id="relatorios" class="page">
+
+            <h1>📊 Relatórios</h1>
+
+            <p>Confira os dados da sua propriedade.</p>
+
+            <div class="report-card">
+                <h3>Total de plantações</h3>
+                <p id="relatorioPlantacoes">0</p>
+            </div>
+
+            <div class="report-card">
+                <h3>Total de irrigações</h3>
+                <p id="relatorioIrrigacoes">0</p>
+            </div>
+
+            <div class="report-card">
+                <h3>Água utilizada</h3>
+                <p id="totalAgua">0 litros</p>
+            </div>
+
+            <button
+                class="primary-btn"
+                onclick="exportarRelatorio()"
+            >
+                📥 Baixar relatório
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🌱 AgroSmart © 2026</p>
+        <p>Inovação e sustentabilidade no campo.</p>
+        <small>Projeto desenvolvido para feira de ciências.</small>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
