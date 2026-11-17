@@ -1,1 +1,41 @@
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="none"/>
+
+  <!-- Sombra do grão -->
+  <path fill="#542817" d="
+    M27 7 H39 V12 H46 V19 H52 V29
+    H57 V40 H52 V49 H45 V55
+    H34 V59 H23 V55 H15 V49
+    H9 V39 H6 V27 H11 V18
+    H18 V11 H27 Z"/>
+
+  <!-- Corpo do feijão -->
+  <path fill="#9b542b" d="
+    M27 11 H39 V16 H45 V23
+    H50 V32 H54 V40 H49 V47
+    H42 V52 H32 V55 H23 V51
+    H16 V44 H11 V35 H10 V27
+    H16 V20 H22 V14 H27 Z"/>
+
+  <!-- Luz -->
+  <path fill="#c47a43" d="
+    M26 15 H37 V20 H42 V27
+    H47 V34 H42 V29 H36 V24
+    H26 V20 H21 V25 H16 V21
+    H22 V16 Z"/>
+
+  <!-- Marca característica do feijão -->
+  <path fill="#e2ad72" d="
+    M39 27 H44 V32 H41 V37
+    H36 V42 H30 V39 H35
+    V34 H39 Z"/>
+
+  <!-- Sombra inferior -->
+  <path fill="#71391f" d="
+    M16 44 H22 V49 H32 V52
+    H42 V47 H47 V43 H49
+    V48 H42 V53 H32 V56
+    H23 V52 H16 Z"/>
+</svg>
+
