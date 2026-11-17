@@ -28,7 +28,10 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
+        
+      - name: Install icon generator
+        run: npm install --save-dev @capacitor/assets
+        
       - name: Prepare web files
         run: |
           mkdir -p www
@@ -42,7 +45,9 @@ jobs:
           npm install @capacitor/android@^7.4.3
           npx cap add android
           npx cap sync android
-
+      - name: Generate app icons
+        run: |
+          npx @capacitor/assets generate --android --assetPath resources --iconBackgroundColor '#0B6B3A'
       - name: Build APK
         run: |
           cd android
