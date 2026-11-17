@@ -1,1 +1,46 @@
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="none"/>
+
+  <!-- Raiz da mandioca -->
+  <path fill="#70401f" d="
+    M25 7 H39 V12 H44 V19
+    H49 V29 H45 V39 H41
+    V49 H35 V57 H26 V53
+    H21 V45 H17 V35 H13
+    V25 H18 V16 H25 Z"/>
+
+  <!-- Casca -->
+  <path fill="#a66b36" d="
+    M27 12 H37 V17 H41 V24
+    H45 V30 H41 V39 H37
+    V48 H32 V52 H27 V45
+    H23 V36 H19 V27 H23
+    V19 H27 Z"/>
+
+  <!-- Parte clara da raiz -->
+  <path fill="#f5e3bd" d="
+    M28 17 H36 V22 H40 V30
+    H36 V38 H33 V46 H28
+    V39 H25 V30 H28 V22 Z"/>
+
+  <!-- Textura pixelada -->
+  <path fill="#d3b58a" d="
+    M28 22 H32 V26 H28 Z
+    M33 31 H37 V35 H33 Z
+    M28 37 H32 V41 H28 Z"/>
+
+  <!-- Folhas -->
+  <path fill="#287c35" d="
+    M30 9 H34 V5 H39 V9
+    H45 V13 H38 V17
+    H33 V14 H28 V17
+    H23 V13 H17 V9
+    H24 V5 H29 V9 Z"/>
+
+  <!-- Detalhes das folhas -->
+  <path fill="#58b84b" d="
+    M25 9 H29 V12 H25 Z
+    M36 9 H41 V12 H36 Z"/>
+</svg>
+
