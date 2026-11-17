@@ -1,0 +1,16 @@
+
+{
+  "name": "agrosmart",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicativo de planejamento agrícola inteligente e sustentável",
+  "scripts": {
+    "build": "echo Build concluido"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.4.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.3"
+  }
+}
