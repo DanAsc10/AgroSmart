@@ -445,3 +445,16 @@ footer p {
         width: 100%;
     }
 }
+.crop-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #176b3a;
+}
+
+.crop-title img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
