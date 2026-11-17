@@ -1,1 +1,40 @@
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="none"/>
+
+  <!-- Sombra -->
+  <path fill="#28652b" d="
+    M27 7 H39 V12 H48 V19 H54 V29
+    H58 V40 H52 V49 H44 V55
+    H20 V51 H12 V44 H7 V31
+    H11 V20 H18 V13 H27 Z"/>
+
+  <!-- Folhas externas -->
+  <path fill="#48a83f" d="
+    M27 12 H37 V17 H45 V23
+    H51 V33 H46 V42 H39
+    V49 H25 V45 H17 V39
+    H12 V29 H17 V21 H23
+    V16 H27 Z"/>
+
+  <!-- Folhas internas -->
+  <path fill="#78d64b" d="
+    M28 16 H37 V21 H43 V29
+    H47 V36 H40 V42 H34
+    V47 H27 V40 H21 V34
+    H17 V27 H23 V21 H28 Z"/>
+
+  <!-- Centro -->
+  <path fill="#b0ed69" d="
+    M29 22 H36 V27 H40 V34
+    H35 V40 H29 V35 H25
+    V28 H29 Z"/>
+
+  <!-- Detalhes das folhas -->
+  <path fill="#328536" d="
+    M17 27 H22 V32 H17 Z
+    M42 23 H47 V28 H42 Z
+    M20 39 H26 V44 H20 Z
+    M39 39 H44 V44 H39 Z"/>
+</svg>
+
