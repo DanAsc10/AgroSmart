@@ -1,1 +1,39 @@
 
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="none"/>
+
+  <!-- Sombra -->
+  <path fill="#92251d" d="
+    M27 10 H38 V14 H47 V19 H53 V27
+    H57 V40 H53 V48 H46 V54
+    H36 V58 H24 V54 H15 V48
+    H9 V39 H6 V27 H11 V19
+    H18 V14 H27 Z"/>
+
+  <!-- Tomate -->
+  <path fill="#e53929" d="
+    M27 14 H37 V18 H44 V22 H50 V30
+    H53 V40 H48 V47 H41 V52
+    H24 V48 H16 V42 H11 V29
+    H16 V22 H23 V18 H27 Z"/>
+
+  <!-- Brilho -->
+  <path fill="#ff7255" d="
+    M19 23 H26 V19 H34 V24
+    H27 V29 H21 V36 H16 V29
+    H19 Z"/>
+
+  <!-- Folhas -->
+  <path fill="#246b2c" d="
+    M30 18 H34 V10 H39 V16
+    H47 V21 H39 V25 H34
+    V22 H29 V26 H24 V22
+    H17 V18 H26 V14 H30 Z"/>
+
+  <!-- Detalhes -->
+  <path fill="#b72c20" d="
+    M43 32 H48 V40 H43 V45
+    H36 V49 H29 V45 H37
+    V40 H43 Z"/>
+</svg>
+
